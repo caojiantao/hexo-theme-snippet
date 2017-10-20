@@ -1,5 +1,6 @@
+<% var imgConfig = theme.img_config; %>
 <div class="carousel">
-    <%- image_tag('img/head-img.jpg') %>
+    <img src="<%- url_for(imgConfig.header_img) %>" alt="">
 </div>
 <% if(page.posts && page.posts.length){ %>
 <% page.posts.forEach(function (post, i) { %>
@@ -15,7 +16,7 @@
 <article class="post">
     <% if(_photoUrl) {%>
         <div class="post-media">
-            <a href="javascript:">
+            <a href="<%- url_for(post.path) %>">
                 <img class="img-ajax" src="<%= theme.placeholder %>"  data-src="<%- url_for(_photoUrl) %>"   alt="<%- post.title %>"> 
             </a>
         </div>

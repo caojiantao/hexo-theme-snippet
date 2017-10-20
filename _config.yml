@@ -12,16 +12,27 @@ menu:
 - page: 后端
   url: /categories/后端/
   icon: 
-- page: 工具
-  url: /categories/工具/
+- page: Android
+  url: /categories/Android/
   icon: 
-- page: 资源
-  url: /categories/资源/
+- page: 篮球
+  url: /categories/篮球/
   icon: 
+#- page: 工具
+#  url: /categories/工具/
+#  icon: 
+#- page: 资源
+#  url: /categories/资源/
+#  icon: 
 
 
 ## favicon 
 favicon: /favicon.ico
+
+img_config: 
+  header_logo: /img/header-logo.png
+  header_img: /img/header-img.jpg
+  loading: loading.gif
 
 ## Feed 
 rss: /atom.xml
@@ -34,7 +45,7 @@ widgets:
 - notification
 - social
 - category
-- archive
+#- archive
 - tagcloud
 - friends
 
@@ -42,31 +53,30 @@ widgets:
 
 ## 网站公告设置
 notification: |-
-            <p>主题Snippet v1.1.0版本已经上线！欢迎更新~ <br/>
-            主题下载：<a href="https://github.com/shenliyang/hexo-theme-snippet" title="fork me" target="_blank">Snippet主题</a> <br/>
-            <hr/>接受贡献，包括不限于提交问题与需求，修复代码。欢迎Pull Request。<br/>支持主题：<a href="https://github.com/shenliyang/hexo-theme-snippet/stargazers">Star一下</a>
+            <p>
+              我以前跟一富二代同时爱上一个女孩，富二代整天游手好闲。而我是一个勤奋拼搏的穷小子。有天我们俩人同时去到女孩家楼下找她去玩。富二代开宝马，我只是走路。女孩微微一笑，说道：“有钱虽好但并不代表一切，只要努力……”然后车开远了我就没听清了。。。
             </p>
 
 ## 社交设置
 social:
  - name: Github
-   icon: git
-   href: //github.com/shenliyang
- - name: 邮箱
-   icon: envelope-o
-   href: mailto:snippet@91h5.cc
- - name: 联系QQ
-   icon: qq
-   href: /
+   icon: github
+   href: //github.com/caojiantao
  - name: 微博
    icon: weibo
-   href: /
- - name: QQ群
-   icon: users
-   href: /
- - name: RSS
-   icon: feed
-   href: /atom.xml
+   href: //weibo.com/2927371905/profile
+ - name: 邮箱
+   icon: envelope-o
+   href: mailto:caojiantao30@gmail.com
+# - name: RSS
+#   icon: feed
+#   href: /atom.xml
+# - name: 联系QQ
+#   icon: qq
+#   href: /
+# - name: QQ群
+#   icon: users
+#   href: /
 
 ## 文章分类设置
 cate_config:
@@ -90,7 +100,7 @@ tagcloud_config:
 
 ## 友链设置
 links:
-  - 个人博客: http://www.shenliyang.com
+  - 黑恶势力汪的博客: http://www.rufer.site
 
 
 # 自定义内容设置
@@ -98,7 +108,7 @@ links:
 ## 添加版权保护 
 archiveCopyright:
   enable: true
-  tip: '商业转载请联系作者获得授权,非商业转载请注明出处 © Snippet'
+  tip: '本文为博主原创文章，转载请附原博客地址。侵权必究'
 
 
 ## 当无目录时的显示文字，默认为'无'
@@ -112,10 +122,11 @@ warning:
   days: 300 
   text: '本文于%d天之前发表，文中内容可能已经过时。'
 
+## 首页文章简介的图片占位符（相对根目录）
+placeholder: /img/loading.gif
 
-## 首页文章简介的图片占位符
-placeholder: ./img/loading.gif
-
+### 首页文章缩略图
+### 加载规则: 自定义文章缩略图(在Front-matter中添加的'img'字段) > 文章内的图片 > defaultImgs(随机获取) > 无图模式列表
 ## 首页文章简介的图片
 defaultImgs:
   - 
@@ -128,11 +139,13 @@ highlightTheme: default
 
 
 ## 版权声明文字，支持html/text，但不要使用<li>标签
-cc: |-
-      <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">
-      知识共享署名-非商业性使用-禁止演绎 3.0 未本地化版本许可协议（CC BY-NC-ND 3.0）
-      </a>
+##cc: |-
+##      <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">
+##      知识共享署名-非商业性使用-禁止演绎 3.0 未本地化版本许可协议（CC BY-NC-ND 3.0）
+##      </a>
 
+
+root: /
 
 ## 主题评论
 ### gitment
@@ -148,11 +161,11 @@ gitment:
 ###友言评论
 uyan:
   enable: true
-  uyan_id: 1966422
+  uyan_id: 2146758
 
 
-## 网盟CNZZ网站统计
-cnzz_anaylytics: 1263868967
+## 友盟CNZZ网站统计
+cnzz_anaylytics: 1265096543
 
 ## 百度网站统计
 baidu_anaylytics: 
