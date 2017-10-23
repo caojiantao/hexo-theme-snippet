@@ -42,6 +42,7 @@ date_format: YYYY-MM-DD HH:mm:ss
 
 ## widgets
 widgets:
+- search
 - notification
 - social
 - category
