@@ -135,7 +135,7 @@ defaultImgs:
 excerptLength: 120
 
 ## 代码高亮配置
-highlightTheme: default
+highlightTheme: monokai
 
 
 ## 版权声明文字，支持html/text，但不要使用<li>标签
