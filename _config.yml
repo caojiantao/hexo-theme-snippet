@@ -91,13 +91,13 @@ arch_config:
    order: -1
 
 ## 彩色标签云设置
-tagcloud_config:
-   min_font: 1
-   max_font: 1
-   unit: em
-   amount: 100
-   color: true
-   orderby: 'count'
+#  tagcloud_config:
+#     min_font: 1
+#     max_font: 1
+#     unit: em
+#     amount: 100
+#     color: true
+#     orderby: 'count'
 
 ## 友链设置
 links:
