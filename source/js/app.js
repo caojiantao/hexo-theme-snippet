@@ -78,9 +78,7 @@ window.onload = function() {
         if ($process) {
             $process.style.width = (getScrollTop() / ($body.scrollHeight - window.innerHeight)) * 100 + "%";
         }
-        
         imgsAjax($ajaxImgs);
-        
     };
     scrollCallback();
     //监听滚动事件
@@ -89,5 +87,19 @@ window.onload = function() {
         scrollTimer = setTimeout(function() {
             scrollCallback();
         }, 100);
+
+        // 返回顶部
+        if (window.scrollY > 0) {
+            scrollEle.style.display = 'block';
+        } else {
+            scrollEle.style.display = 'none';
+        }
     });
+
+    // Our scroll link element
+    var scrollEle = document.getElementById('back-to-top');
+    scrollEle.style.display = window.scrollY > 0 ? 'block' : 'none';
+    scrollEle.onclick =  function(){
+        window.scrollTo(0, 0);
+    }
 };

@@ -6,7 +6,18 @@
 <% } else { %>
 <% } %>
 </h3>
-<% page.posts.each(function(post){ %>
+<% var imgConfig = theme.img_config; %>
+<% if(page.posts && page.posts.length){ %>
+<% page.posts.forEach(function (post) { %>
+    <%
+        var urls = pickImgs(post);
+        var random = Math.floor(Math.random() * (urls.length));
+        if(theme.defaultImgs && theme.defaultImgs.length >0){
+            var urls2 = theme.defaultImgs;
+            var random2 = Math.floor(Math.random() * (urls2.length));
+        }
+        var _photoUrl = post.img || (urls.length > 0 && urls[random]) || (urls2.length > 0 && urls2[random2]) || '';
+    %>
     <article class="post">
         <% if(post.img) { %>
             <div class="post-media">
@@ -30,8 +41,18 @@
                 <%- truncate(strip_html(post.content), {length: theme.excerptLength || 120, omission: '...'}) %>
             </p> 
         </div>
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <%- partial('_partial/article-meta', {post: post}) %>
+            </div>
+
+            <div class="post-permalink"> 
+                <a href="<%- url_for(post.path) %>" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
     </article>
- <% }) %>
+<% }) %>
+<%}%>
 
 <%- partial('_partial/pagination') %>
 

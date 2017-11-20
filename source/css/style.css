@@ -24,15 +24,6 @@ body {
   position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 400;
-  color: #303030;
-}
 h1 {
   font-size: 2em;
 }
@@ -161,6 +152,10 @@ textarea:focus {
 blockquote {
   border-left: 4px solid #e67e22;
   background-color: #f9f9f9;
+}
+blockquote p{
+  font-size: inherit !important;
+  line-height: inherit !important;
 }
 pre {
   padding: 0;
@@ -565,43 +560,34 @@ pre {
   margin: 3.2em auto;
   padding: 0;
 }
-.post-content blockquote {
-  margin: 0 0 1.64em 0;
-  border-left: 3px solid #e67e22;
-  padding-left: 12px;
-  color: #666666;
-}
-.post-content blockquote a {
-  color: #666666;
-}
-.post-content ul {
+.post-body ul {
   margin: 0 0 24px 6px;
   padding-left: 16px;
   list-style-type: square;
 }
-.post-content ol {
+.post-body ol {
   margin: 0 0 24px 6px;
   padding-left: 16px;
   list-style-type: decimal;
 }
-.post-content li {
+.post-body li {
   margin-bottom: 0.2em;
 }
-.post-content li ul {
+.post-body li ul {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 14px;
   list-style-type: disc;
 }
-.post-content li ul ul {
+.post-body li ul ul {
   list-style-type: circle;
 }
-.post-content li ol {
+.post-body li ol {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 14px;
 }
-.post-content li p {
+.post-body li p {
   margin: 0.4em 0 0.6em;
 }
 .post-content .unstyled {
@@ -658,35 +644,34 @@ pre {
   background: none;
   padding: 0;
 }
-.post-content table {
+.post-body table {
   width: 100%;
   max-width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
-  margin-bottom: 1.5em;
   font-size: 0.96em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.post-content table pre {
+.post-body table pre {
   margin: 0;
   padding: 0;
   border: none;
   background: none;
 }
-.post-content th {
+.post-body th {
   text-align: left;
   padding: 4px 8px 4px 10px;
   border: 1px solid #dadada;
 }
-.post-content td {
+.post-body td {
   text-align: left;
   padding: 4px 8px 4px 10px;
   border: 1px solid #dadada;
   vertical-align: top;
 }
-.post-content tr:nth-child(even) {
+.post-body tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 .post-content iframe {
@@ -884,24 +869,25 @@ pre {
 /* back-to-top */
 #back-to-top {
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  right: 30px;
+  bottom: 30px;
   background: rgba(230, 126, 34, 0.6);
   color: #fff;
   text-align: center;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+  cursor: pointer;
   z-index: 1;
-  display: none;
 }
 #back-to-top:hover {
   background: #e67e22;
 }
 #back-to-top i {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.5em;
 }
 /* highlight */
 /*====================================================
@@ -913,11 +899,21 @@ pre {
 .highlight table {
   width: 100%;
 }
+.highlight td {
+  padding: 0;
+  border: unset;
+}
 .highlight .gutter {
   display: none;
 }
 .highlight .code pre {
   margin-bottom: 0;
+  padding: 0.5em;
+  background: #272822;
+}
+.highlight .line {
+  padding: 0;
+  height: 18px;
 }
 /*====================================================
     media
