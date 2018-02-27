@@ -143,7 +143,7 @@ defaultImgs:
 excerptLength: 120
 
 ## 代码高亮配置
-highlightTheme: monokai
+highlightTheme: github-gist
 
 
 ## 版权声明文字，支持html/text，但不要使用<li>标签
@@ -168,12 +168,12 @@ gitment:
 
 ###友言评论
 uyan:
-  enable: true
+  enable: false
   uyan_id: 2146758
 
 
 ## 友盟CNZZ网站统计
-cnzz_anaylytics: 1265096543
+# cnzz_anaylytics: 1265096543
 
 ## 百度网站统计
 baidu_anaylytics: 

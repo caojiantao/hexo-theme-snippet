@@ -31,16 +31,20 @@ h2 {
   font-size: 1.5em;
 }
 h3 {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 h4 {
-  font-size: 1em;
+  font-size: 1.2em;
 }
 h5 {
   font-size: 0.75em;
 }
 h6 {
   font-size: 0.5em;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0 0 1em 0;
 }
 a {
   color: #e67e22;
@@ -152,6 +156,7 @@ textarea:focus {
 blockquote {
   border-left: 4px solid #e67e22;
   background-color: #f9f9f9;
+  font-size: 1em;
 }
 blockquote p{
   font-size: inherit !important;
@@ -388,6 +393,7 @@ pre {
   height: 160px;
   float: left;
   overflow: hidden;
+  border: 1px solid #ebebeb;
 }
 .post .post-media img {
   width: 100%;
@@ -397,7 +403,7 @@ pre {
   text-align: left;
 }
 .post .post-content p.brief {
-  color: #666666;
+  color: #333;
 }
 .post .post-body {
   margin-top: 15px;
@@ -893,8 +899,14 @@ pre {
 /*====================================================
     highlight
 ====================================================*/
+.hljs {
+  background-color: transparent;
+}
 .highlight {
   overflow-x: auto;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 1em;
 }
 .highlight table {
   width: 100%;
@@ -909,7 +921,7 @@ pre {
 .highlight .code pre {
   margin-bottom: 0;
   padding: 0.5em;
-  background: #272822;
+  background: #f6f6f6;
 }
 .highlight .line {
   padding: 0;
