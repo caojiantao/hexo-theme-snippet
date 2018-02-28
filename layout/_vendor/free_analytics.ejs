@@ -1,0 +1,11 @@
+<%if(theme.free_analytics.enable){%>
+    <script language="JavaScript">
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "http://tongji.cnfree8.com/common/tongji.asp?id=<%= theme.free_analytics.id%>";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+<%}%>

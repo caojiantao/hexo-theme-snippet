@@ -181,6 +181,10 @@ baidu_anaylytics:
 ## 百度文章推送
 baidu_push:
 
+free_analytics:
+  enable: true
+  id: 93
+
 ## ICON配置
 fontAwesome: //cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css
 
