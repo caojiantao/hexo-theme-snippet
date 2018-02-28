@@ -5,12 +5,12 @@
 menu:
 - page: home
   url: /
-  icon: fa-home
-- page: 前端
-  url: /categories/前端/
   icon: 
 - page: 后端
   url: /categories/后端/
+  icon: 
+- page: 前端
+  url: /categories/前端/
   icon: 
 - page: Android
   url: /categories/Android/
@@ -55,13 +55,13 @@ widgets:
 ## 网站公告设置
 notification: |-
   <p>
-    2018，好运，总是眷顾傻瓜~
+    花有重开日，人无再少年。
   </p>
   <p>
-    新的一年，杨帆，起航！
+    无数次地快要放弃的时候，我都觉得这是一个成长的机会。
   </p>
   <p>
-    人生就一次，我要为自己而活。
+    真心感谢生命中的每一个过客，让我的心生薄茧，逐渐变得更为坚强。待年过几许时，回过头来，都是我一笔最宝贵的财富。
   </p>
 
 ## 社交设置
