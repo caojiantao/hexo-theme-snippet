@@ -18,6 +18,9 @@ menu:
 - page: 篮球
   url: /categories/篮球/
   icon: 
+- page: 音乐
+  url: /categories/音乐/
+  icon: 
 #- page: 工具
 #  url: /categories/工具/
 #  icon: 
